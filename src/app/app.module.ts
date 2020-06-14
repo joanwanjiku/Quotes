@@ -8,6 +8,7 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
 import { ListQuoteComponent } from './list-quote/list-quote.component';
 import { AddQuoteComponent } from './add-quote/add-quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { FormatDatePipe } from './pipes/format-date.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
     FooterComponentComponent,
     ListQuoteComponent,
     AddQuoteComponent,
-    QuoteDetailsComponent
+    QuoteDetailsComponent,
+    FormatDatePipe
   ],
   imports: [
     BrowserModule,
