@@ -1,0 +1,15 @@
+.alCenter{
+    text-align: center;
+}
+.modal-header{
+    background-color: rgb(104, 103, 103);
+}
+#staticLabel{
+    font-weight: bold;
+    color: white;
+}
+.alert{
+    font-size: .875rem;
+    margin: 0;
+    padding: 0;
+}

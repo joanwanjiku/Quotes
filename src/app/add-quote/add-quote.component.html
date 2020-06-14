@@ -1,8 +1,7 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
     Add Quote
-  </button>
-  
+  </button>  
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -13,13 +12,51 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
+        <form class="alCenter" #quoteForm = "ngForm">   
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" #name= "ngModel" name="name" minlength="6" [(ngModel)]="newQuote.name" required>
+                    <div class="alert alert-danger mt-1" *ngIf="name.touched && !name.valid">
+                      <div *ngIf="name.errors.required">Name is required</div>
+                      <div *ngIf="name.errors.minlength">Name should be more than 6</div>  
+                  </div>
+                </div>  
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input class="form-control" id="author" name="author" #author= "ngModel" minlength="6" [(ngModel)]="newQuote.author" required>
+                    <div class="alert alert-danger mt-1" *ngIf="author.touched && !author.valid">
+                      <div *ngIf="author.errors.required">Author is required</div>
+                      <div *ngIf="author.errors.minlength">Author should be more than 6</div>  
+                  </div>
+                </div>            
+                
+                <div class="form-group">
+                    <label for="description">Message</label>
+                    <textarea class="form-control" id="description" rows="3" name="description" #description= "ngModel" [(ngModel)]="newQuote.description" required></textarea>
+                    <div class="alert alert-danger mt-1" *ngIf="description.touched && !description.valid">
+                      <div *ngIf="description.errors.required">Description is required</div>
+                      <div *ngIf="description.errors.minlength">Description should be more than 6</div>  
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date" name="date" #date= "ngModel" [(ngModel)]="newQuote.date" required>
+                </div>  
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info">Add Event</button>
+                </div>             
+            </div>
+            <div class="row modal-footer justify-content-between">
+                <div class="col-4">
+                    <button type="submit" class="btn btn-info" data-dismiss="modal">Ok</button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </form>
       </div>
     </div>
   </div>
