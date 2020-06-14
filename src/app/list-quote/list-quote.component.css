@@ -10,3 +10,11 @@ small:hover{
     border-radius: 2%;
     font-weight: bold;
 }
+.addQuote{
+    width: 90%;
+    margin: 0 auto;
+}
+.quoteList{
+    width: 50%;
+    margin: 0 auto;
+}
