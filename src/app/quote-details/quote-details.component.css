@@ -7,7 +7,10 @@ i:hover{
     cursor: pointer;
     color: blue;
 }
-
 .btn:hover{
     background-color: brown;
+}
+.subName{
+    font-weight: bold;
+    text-transform: capitalize;
 }
