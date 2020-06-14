@@ -13,6 +13,9 @@ export class AddQuoteComponent implements OnInit {
     this.newQuote = new Quote(0, "", "", "", new Date)
   }
 
+  // onSubmit(){
+
+  // }
   ngOnInit(): void {
   }
 
