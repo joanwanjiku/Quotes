@@ -1,6 +1,6 @@
 <div class="row addQuote">
   <div class="col">
-    <app-add-quote></app-add-quote>
+    <app-add-quote (addQuote) = "addQuoteToList($event)"></app-add-quote>
   </div>
 </div>
 <div class="row quoteList mt-1">

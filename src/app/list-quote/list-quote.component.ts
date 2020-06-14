@@ -25,6 +25,14 @@ export class ListQuoteComponent implements OnInit {
       this.quotes.splice(index, 1)
     }
   }
+
+  addQuoteToList(quote){
+    let quotesLen = this.quotes.length;
+    quote.id = quotesLen+1;
+    console.log(quote)
+    quote.date = new Date(quote.date)
+    this.quotes.push(quote)
+  }
   ngOnInit(): void {
   }
 
