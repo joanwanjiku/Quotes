@@ -33,7 +33,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
     - joanevans18@gmail.com
 
 #### License
-- Copyright &copy; 2020
+-  **[MIT license](http://opensource.org/licenses/mit-license.php)** | Copyright &copy; 2020
+ 
 
 
 
