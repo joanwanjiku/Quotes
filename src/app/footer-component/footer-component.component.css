@@ -1,0 +1,11 @@
+p{
+    color: white;
+    text-align: center;
+}
+i{
+    color: black;
+}
+i:hover{
+    color: blue;
+    cursor: pointer;
+}
