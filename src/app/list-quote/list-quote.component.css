@@ -1,0 +1,12 @@
+small{
+    color: blue;
+    font-weight: 400;
+}
+small:hover{
+    cursor: pointer;
+    color: black;
+    background: rgba(0, 0, 255, 0.408);
+    padding: .2em;
+    border-radius: 2%;
+    font-weight: bold;
+}

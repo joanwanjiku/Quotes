@@ -1,0 +1,17 @@
+<div class="row addQuote">
+
+</div>
+<div class="row quoteList">
+    <div class="col-sm-9 offset-sm-4">
+        <div class="card" *ngFor="let quote of quotes; let i = index">            
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">                
+                <p> <span>&ldquo;</span>{{quote.description}}.</p>
+                <footer class="blockquote-footer text-right"><cite title="Source Title">{{quote.author}}</cite> | Published: {{quote.date | date}}</footer>
+              </blockquote>
+              <small (click)="toggleFooter(i)">Details...</small>
+            </div>
+            <app-quote-details *ngIf="quote.showFooter"></app-quote-details>
+          </div>
+    </div>
+</div>
