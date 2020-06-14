@@ -4,7 +4,7 @@
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
-	background: linear-gradient(to right, #EDE342, #F2BF6C,#F69A97, #FB76C1, #FF51EB);
+	background: linear-gradient(to right, #42047e, #07f49e);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -12,6 +12,8 @@ p{
     text-align: center;
     color: black;
 }
-.changebg{
-    background: gray;
+.changebg{    
+    background: url('../../assets/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
