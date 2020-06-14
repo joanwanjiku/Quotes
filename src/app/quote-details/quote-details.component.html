@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-sm-4">
             <i class="fa fa-thumbs-o-up text-success" aria-hidden="true"  (click)="addLike()"></i> {{quote.upvotes}}
-            <i class="fa fa-thumbs-o-up text-danger ml-3" aria-hidden="true"  (click)="addDislike()"></i> {{quote.downvotes}}
+            <i class="fa fa-thumbs-o-down text-danger ml-3" aria-hidden="true"  (click)="addDislike()"></i> {{quote.downvotes}}
         </div>
         <div class=" col-sm-4 offset-sm-4 text-right">
             <button class="del btn btn-sm btn-danger" (click)="deleteQuote(true)">Delete</button>

@@ -8,6 +8,7 @@ import { Quote } from '../models/quote';
 })
 export class AddQuoteComponent implements OnInit {
 
+  displayMsg: string;
   @Output() addQuote: EventEmitter<any> = new EventEmitter<any>()
   newQuote: Quote;
   constructor() { 
@@ -15,8 +16,12 @@ export class AddQuoteComponent implements OnInit {
   }
 
   onSubmit(){
-    this.addQuote.emit(this.newQuote)
+    this.addQuote.emit(this.newQuote);
   }
+  success(){
+    this.displayMsg = 'Quote Added Successfully!!'
+  }
+  
   ngOnInit(): void {
   }
 
