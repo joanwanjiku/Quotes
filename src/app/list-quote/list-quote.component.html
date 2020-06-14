@@ -11,7 +11,7 @@
               </blockquote>
               <small (click)="toggleFooter(i)">Details...</small>
             </div>
-            <app-quote-details *ngIf="quote.showFooter"></app-quote-details>
+            <app-quote-details *ngIf="quote.showFooter" [quote]= "quote" (canDelete)= "deleteQuote($event, i)"></app-quote-details>
           </div>
     </div>
 </div>

@@ -1,0 +1,13 @@
+i{
+    /* margin-right: 1.5em; */
+    font-weight: bold;
+}
+
+i:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.btn:hover{
+    background-color: brown;
+}

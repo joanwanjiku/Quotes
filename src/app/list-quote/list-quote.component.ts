@@ -20,6 +20,11 @@ export class ListQuoteComponent implements OnInit {
   toggleFooter(index){
     this.quotes[index].showFooter = !this.quotes[index].showFooter
   }
+  deleteQuote(status, index){
+    if (status){
+      this.quotes.splice(index, 1)
+    }
+  }
   ngOnInit(): void {
   }
 
