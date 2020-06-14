@@ -1,27 +1,39 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+This platform displays some amazing quotes, the authors of the quotes, the person who submitted the quotes and time passed since the quote was published.
+It also lets a user add his/her favourite quote to the quotes list through a form.
 
-## Development server
+## Prerequisites
+- Have git installed
+- Have the latest version of NodeJs, angular-cli and typeScript installed.
+- Have a text editor installed e.g VsCode, Atom
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies Used
+- HTML, CSS, Bootstrap.
+- Typescript and Angular
 
-## Code scaffolding
+## Project Setup
+Ensure you have all the items in the prerequisites installed. To run the application:-
+1. Clone the repository to a folder in your machine using `git clone https://github.com/joanwanjiku/Quotes.git`
+2. `cd` to that folder.
+3. Open it on your text editor.
+4. Run `ng serve` on the terminal.
+5. After the application finishes compiling, Navigate to `http://localhost:4200/`. The app will automatically reload if you make any changes.
+
+### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+#### Author
+- Joan Evans
+    - joanevans18@gmail.com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### License
+- Copyright &copy; 2020
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
