@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { ListQuoteComponent } from './list-quote/list-quote.component';
+import { AddQuoteComponent } from './add-quote/add-quote.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponentComponent,
-    FooterComponentComponent
+    FooterComponentComponent,
+    ListQuoteComponent,
+    AddQuoteComponent,
+    QuoteDetailsComponent
   ],
   imports: [
     BrowserModule,
