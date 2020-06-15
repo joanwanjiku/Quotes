@@ -9,7 +9,7 @@ import { Quote } from '../models/quote';
 export class QuoteDetailsComponent implements OnInit {
 
   @Input() quote: Quote;
-  @Output() canDelete: EventEmitter<boolean> = new EventEmitter<boolean>()
+  @Output() canDelete: EventEmitter<boolean> = new EventEmitter<boolean>()  
   constructor() { }
 
 
